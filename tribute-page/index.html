@@ -15,9 +15,14 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
-  <script src="js/main.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+
 
   <title>Rilakkuma (・∀・ )</title>
 </head>
@@ -52,7 +57,7 @@
 
           </ul>
 
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0" id="search-form">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
@@ -67,6 +72,7 @@
   <div class="container pt-5">
     <h1 class="text-center text-warning pt-4">Rilakkuma-san</h1>
   </div>
+
   <div class="container pt-5">
     <div class="card-group">
       <div class="card">
@@ -85,7 +91,7 @@
         <img class="card-img-top" src="./img/rilakkuma-animated.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title text-center text-success">Origin</h5>
-          <p class="card-text">He mysteriously appears in the office lady Kaoru's apartment one day.[9] He is a soft toy bear who has apparently decided to take up residence there.</p>
+          <p class="card-text">He mysteriously appears in the office lady Kaoru's apartment one day. He is a soft toy bear who has apparently decided to take up residence there.</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
@@ -96,7 +102,7 @@
         <img class="card-img-top" src="./img/friends.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title text-center text-primary">Friends</h5>
-          <p class="card-text">Rilakkuma is often accompanied by his friend Korilakkuma (コリラックマ korirakkuma) & Kiiroitori (キイロイトリ kiiroi tori)</p>
+          <p class="card-text">Rilakkuma is often accompanied by his friend Korilakkuma (コリラックマ korirakkuma) & Kiiroitori (キイロイトリ kiiroi tori) who is a pet chick.</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
@@ -107,6 +113,10 @@
     </div>
   </div>
 
+  <div class="container pt-5 pb-5">
+    <h1 class="text-center">What has Rilakkuma done today?</h1>
+    <div id="articles">Loading now... </div>
+  </div>
 
 
 
@@ -129,7 +139,11 @@
                 </div>
             </div>
         </div>
+
     </footer>
+
+
+
 
 
 </body>
