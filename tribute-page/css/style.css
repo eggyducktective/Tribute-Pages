@@ -38,3 +38,8 @@ footer a:hover {
   border-radius: 25px;
   padding: 5px 5px 5px 15px;
 }
+
+#articles a {
+  text-decoration: none;
+
+}
